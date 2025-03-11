@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "email": "user1@example.com"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "email": "user2@example.com"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "Product 1",
+      "price": 19.99,
+      "description": "Description of product 1",
+      "reviews": [
+        {
+          "id": 1,
+          "userId": 2,
+          "review": "Great product!",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userId": 1,
+          "review": "Very useful.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "name": "Product 2",
+      "price": 29.99,
+      "description": "Description of product 2",
+      "reviews": [
+        {
+          "id": 3,
+          "userId": 1,
+          "review": "Good quality.",
+          "rating": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,145 @@
 @import "tailwindcss";
+
+.register-page{
+  height: 100vh;
+  width: 100vw;
+  background-color:#3b3b3b;
+
+
+}
+
+.register-form{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #00292D;
+  border-radius: 1vw;
+  padding: 2vw 3vw;
+  gap: 1.3vw;
+  box-shadow: 1px 2px 2px 2px rgb(49, 49, 49);
+}
+.register-form h1{
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.register-btn{
+ background-color: #ffff;
+ color: black;
+  font-weight: 800;
+  padding: 0.6vw 4.3vw;
+  border-radius: 0.5vw;
+}
+.register-form input{
+  padding: 0.4vw 0.6vw;
+  background-color:#456468;
+  border-radius: 0.7vw;
+  outline: none;
+  color: #ffff;
+}
+
+
+.login-page{
+  height: 100vh;
+  width: 100vw;
+  background-color:#3b3b3b;
+}
+
+.login-form{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #00292D;
+  border-radius: 1vw;
+  padding: 2vw 3vw;
+  gap: 1.3vw;
+  box-shadow: 1px 2px 2px 2px rgb(49, 49, 49);
+}
+
+.login-form h1{
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.login-btn{
+ background-color: #ffff;
+ color: black;
+  font-weight: 800;
+  padding: 0.6vw 4.8vw;
+  border-radius: 0.5vw;
+}
+.login-form input{
+  padding: 0.4vw 0.6vw;
+  background-color:#456468;
+  border-radius: 0.7vw;
+  outline: none;
+  color: #ffff;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 2vw;
+  color: #ffff;
+}
+.product-form{
+  display: flex;
+  flex-direction: column; 
+  background-color: #00292D;
+  color: #ffff;
+  padding: 2vw 3vw;
+  margin-top: 2vw;
+  gap: 1vw;
+  border-radius: 1vw;
+
+}
+.product-btn{
+  background-color: white;
+  border-radius: 1vw;
+  padding: 0.5vw 1vw;
+  color: black;
+  font-weight: 600;
+}
+.product-form input{
+  padding: 0.7vw 1vw;
+  background-color: rgb(58, 58, 58);
+  border-radius: 0.6vw;
+  outline: none;
+}
+.product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar h3{
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+
+.card{
+  width: 20vw;
+  padding: 1.5vw 1.5vw;
+  border-radius: 0.7vw;
+  background-color: #fff;
+  color: black;
+
+}
+.card h3{
+  font-size: 1.6vw;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.card h4{
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.card p{
+  opacity: 0.8;
+  font-size: 1vw;
+}

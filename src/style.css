@@ -1,15 +1,25 @@
 @import "tailwindcss";
 
-.register-page{
+.register-page {
   height: 100vh;
   width: 100vw;
-  background-color:#2D2D2D;
-
-
+  background-color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.register-form{
-  /* color: white; */
+
+
+.register-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,140 +29,262 @@
   padding: 2vw 3vw;
   gap: 1.3vw;
   box-shadow: 1px 2px 2px 2px rgb(49, 49, 49);
+  max-width: 400px;
+  width: 90%;
 }
-.register-form h1{
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 1vw;
+  padding: 2vw 3vw;
+  gap: 1.3vw;
+  box-shadow: 1px 2px 2px 2px rgb(49, 49, 49);
+  max-width: 400px;
+  width: 90%;
+}
+
+.product-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 1vw;
+  padding: 3vw 4vw;
+  gap: 1.3vw;
+  box-shadow: 1px 2px 2px 2px rgb(49, 49, 49);
+  max-width: 400px;
+  width: 90%;
+}
+
+.register-form h1 {
   font-size: 2vw;
   font-weight: 600;
 }
+.login-form h1 {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
 
 .register-btn{
- background-color: rgb(66, 66, 255);
- color: #ffff;
-  font-weight: 800;
-  padding: 0.6vw 4.3vw;
-  border-radius: 0.5vw;
-}
-.register-form input{
-  padding: 0.4vw 0.6vw;
-  background-color:#474747;
-  border-radius: 0.7vw;
-  outline: none;
-  color: #ffff;
-}
-
-
-.login-page{
-  height: 100vh;
-  width: 100vw;
-  background-color:#2D2D2D;
-}
-
-.login-form{
-  /* color: white; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #FFFFFF;
-  border-radius: 1vw;
-  padding: 2vw 3vw;
-  gap: 1.3vw;
-  box-shadow: 1px 2px 2px 2px rgb(49, 49, 49);
-}
-
-.login-form h1{
-  font-size: 2vw;
-  font-weight: 600;
-}
-
-.login-btn{
-  background-color: rgb(66, 66, 255);
+  background-color: rgb(64, 201, 64);
   color: #ffff;
   font-weight: 800;
-  padding: 0.6vw 4.8vw;
+  padding: 0.8vw 5vw;
   border-radius: 0.5vw;
-}
-.login-form input{
-  padding: 0.4vw 0.6vw;
-  background-color:#474747;
-  border-radius: 0.7vw;
-  outline: none;
-  color: #ffff;
-}
-.navbar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2vw 2vw;
-  color: #ffff;
-}
-.product-form{
-  display: flex;
-  flex-direction: column; 
-  background-color: #FFFFFF;
-  /* color: #ffff; */
-  padding: 2vw 3vw;
-  margin-top: 2vw;
-  gap: 1vw;
-  border-radius: 1vw;
-
-}
-.product-btn{
-  background-color: rgb(66, 66, 255);
-  /* background-color: rgb(81, 248, 81); */
-  color: #ffff;
-  border-radius: 1vw;
-  padding: 0.5vw 1vw;
-  font-weight: 600;
-}
-.product-form input{
-  padding: 0.7vw 1vw;
-  background-color: #696969;
-  border-radius: 0.6vw;
-  outline: none;
-  font-size: 1vw;
-  color: white;
-}
-.product{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.product-btn {
   font-size: 1.1vw;
 }
 
-.navbar h3{
-  font-size: 1.4vw;
-  font-weight: 600;
+.login-btn {
+  background-color: rgb(64, 201, 64);
+  color: #ffff;
+  font-weight: 800;
+  padding: 0.8vw 5vw;
+  border-radius: 0.5vw;
+  font-size: 1.1vw;
+}
+.product-btn {
+  background-color: rgb(64, 201, 64);
+  color: #ffff;
+  font-weight: 800;
+  padding: 0.8vw 5vw;
+  border-radius: 0.5vw;
+  font-size: 1.1vw;
+}
+.register-form input {
+  padding: 0.7vw 1vw;
+  background-color: rgb(169,169,169);
+  border-radius: 0.7vw;
+  outline: none;
+  /* color: #ffff; */
+  font-size: 1vw;
+  width: 100%;
+}
+ .login-form input {
+  padding: 0.7vw 1vw;
+  background-color: rgb(169,169,169);
+  border-radius: 0.7vw;
+  outline: none;
+  /* color: #ffff; */
+  font-size: 1vw;
+  width: 100%;
+}
+.product-form input {
+  padding: 0.7vw 1vw;
+  background-color: rgb(169,169,169);
+  border-radius: 0.7vw;
+  outline: none;
+  /* color: #ffff; */
+  font-size: 1vw;
+  width: 130%;
 }
 
-.card{
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+  color: #ffff;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
   width: 22vw;
-  padding: 1.5vw 1.5vw;
+  padding: 1.5vw;
   border-radius: 0.7vw;
   background-color: #fff;
   color: black;
-
+  text-align: center;
+  margin: 1vw;
 }
-.card h3{
+
+.card h3 {
   font-size: 1.6vw;
   text-transform: capitalize;
   font-weight: 600;
 }
-.card h4{
+
+.card h4 {
   font-size: 1.3vw;
   font-weight: 600;
 }
 
-.card p{
+.card p {
   opacity: 0.8;
   font-size: 1vw;
 }
-.rating i{
+
+.rating i {
   font-size: 1.2vw;
-  /* color: yellowgreen; */
 }
-.star{
+
+.star {
   font-size: 3vw;
+}
+
+
+@media (max-width: 768px) {
+  .register-form{
+    padding: 5vw;
+    gap: 3vw;
+  }
+
+  .login-form {
+    padding: 5vw;
+    gap: 3vw;
+  }
+  .product-form {
+    padding: 5vw;
+    gap: 3vw;
+  }
+  .register-form h1{
+    font-size: 4vw;
+  }
+  .login-form h1 {
+    font-size: 4vw;
+  }
+
+  .register-btn{
+    font-size: 3vw;
+    padding: 2vw 6vw;
+  }
+  .login-btn {
+    font-size: 3vw;
+    padding: 2vw 6vw;
+  }
+  .product-btn {
+    font-size: 3vw;
+    padding: 2vw 6vw;
+  }
+
+  .register-form input {
+    font-size: 2vw;
+    padding: 1vw;
+  }
+   .product-form input {
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  .product-form input {
+    font-size: 2vw;
+    padding: 1vw;
+  }
+
+
+
+  .card {
+    width: 90%;
+    padding: 3vw;
+  }
+
+  .card h3 {
+    font-size: 3vw;
+  }
+  .card h4 {
+    font-size: 3vw;
+  }
+
+  .card p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .register-form {
+    width: 95%;
+    padding: 6vw;
+  }
+  .login-form{
+    width: 95%;
+    padding: 6vw;
+  }
+  .product-form {
+    width: 95%;
+    padding: 6vw;
+  }
+
+  .register-btn {
+    font-size: 4vw;
+    padding: 3vw 8vw;
+  }
+
+  .login-btn{
+    font-size: 4vw;
+    padding: 3vw 8vw;
+  }
+
+  .product-btn {
+    font-size: 4vw;
+    padding: 3vw 8vw;
+  }
+
+  .register-form input {
+    font-size: 3vw;
+    padding: 1.5vw;
+  }
+
+  .login-form input{
+    font-size: 3vw;
+    padding: 1.5vw;
+  }
+  .product-form input {
+    font-size: 3vw;
+    padding: 1.5vw;
+  }
 }

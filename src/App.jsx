@@ -13,7 +13,6 @@ const App = () => {
     password:"",
   });
  
-
   
 
   
@@ -43,7 +42,7 @@ const App = () => {
           <input value={formData.email} onChange={(e)=>setFormData({...formData,email:e.target.value})} type="text" placeholder='Enter user email' required />
           <input value={formData.password} onChange={(e)=>setFormData({...formData,password:e.target.value})} type="text" placeholder='Enter user password' required/>
           <button className='register-btn'>Register</button>
-          <p>If you have already account ? <Link to={"/login"} className='text-blue-900'>Login Here</Link></p>
+          <p className='text-[2vw'>If you have already account ? <Link to={"/login"} className='text-blue-900 ]'>Login Here</Link></p>
         </form>
       </div>
     </div>

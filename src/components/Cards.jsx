@@ -48,6 +48,7 @@ const handleRating=(star)=>{
                 onClick={() => handleRating(star)} 
                 className={`star ri-star-fill cursor-pointer ${star <= starRating ? 'text-yellow-400' : ''}`}
               ></i>
+
               
               })
 

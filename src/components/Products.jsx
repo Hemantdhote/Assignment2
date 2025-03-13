@@ -48,7 +48,7 @@ const Products = () => {
 
 
   return (
-    <div className='min-h-screen bg-[#3b3b3b]'>
+    <div className='min-h-screen bg-[#2D2D2D]'>
       <div className='navbar'>
         <h3>Product List</h3>
         <Link to={"/"}>Logout</Link>

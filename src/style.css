@@ -3,18 +3,18 @@
 .register-page{
   height: 100vh;
   width: 100vw;
-  background-color:#3b3b3b;
+  background-color:#2D2D2D;
 
 
 }
 
 .register-form{
-  color: white;
+  /* color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #00292D;
+  background-color: #FFFFFF;
   border-radius: 1vw;
   padding: 2vw 3vw;
   gap: 1.3vw;
@@ -26,15 +26,15 @@
 }
 
 .register-btn{
- background-color: #ffff;
- color: black;
+ background-color: rgb(66, 66, 255);
+ color: #ffff;
   font-weight: 800;
   padding: 0.6vw 4.3vw;
   border-radius: 0.5vw;
 }
 .register-form input{
   padding: 0.4vw 0.6vw;
-  background-color:#456468;
+  background-color:#474747;
   border-radius: 0.7vw;
   outline: none;
   color: #ffff;
@@ -44,16 +44,16 @@
 .login-page{
   height: 100vh;
   width: 100vw;
-  background-color:#3b3b3b;
+  background-color:#2D2D2D;
 }
 
 .login-form{
-  color: white;
+  /* color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #00292D;
+  background-color: #FFFFFF;
   border-radius: 1vw;
   padding: 2vw 3vw;
   gap: 1.3vw;
@@ -66,15 +66,15 @@
 }
 
 .login-btn{
- background-color: #ffff;
- color: black;
+  background-color: rgb(66, 66, 255);
+  color: #ffff;
   font-weight: 800;
   padding: 0.6vw 4.8vw;
   border-radius: 0.5vw;
 }
 .login-form input{
   padding: 0.4vw 0.6vw;
-  background-color:#456468;
+  background-color:#474747;
   border-radius: 0.7vw;
   outline: none;
   color: #ffff;
@@ -89,8 +89,8 @@
 .product-form{
   display: flex;
   flex-direction: column; 
-  background-color: #00292D;
-  color: #ffff;
+  background-color: #FFFFFF;
+  /* color: #ffff; */
   padding: 2vw 3vw;
   margin-top: 2vw;
   gap: 1vw;
@@ -98,18 +98,20 @@
 
 }
 .product-btn{
-  background-color: white;
+  background-color: rgb(66, 66, 255);
+  /* background-color: rgb(81, 248, 81); */
+  color: #ffff;
   border-radius: 1vw;
   padding: 0.5vw 1vw;
-  color: black;
   font-weight: 600;
 }
 .product-form input{
   padding: 0.7vw 1vw;
-  background-color: rgb(58, 58, 58);
+  background-color: #696969;
   border-radius: 0.6vw;
   outline: none;
   font-size: 1vw;
+  color: white;
 }
 .product{
   display: flex;

@@ -109,11 +109,15 @@
   background-color: rgb(58, 58, 58);
   border-radius: 0.6vw;
   outline: none;
+  font-size: 1vw;
 }
 .product{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.product-btn {
+  font-size: 1.1vw;
 }
 
 .navbar h3{
@@ -122,7 +126,7 @@
 }
 
 .card{
-  width: 20vw;
+  width: 22vw;
   padding: 1.5vw 1.5vw;
   border-radius: 0.7vw;
   background-color: #fff;
@@ -142,4 +146,11 @@
 .card p{
   opacity: 0.8;
   font-size: 1vw;
+}
+.rating i{
+  font-size: 1.2vw;
+  /* color: yellowgreen; */
+}
+.star{
+  font-size: 3vw;
 }

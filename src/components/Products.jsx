@@ -10,33 +10,39 @@ const Products = () => {
   const [formData, setFormData] = useState({
     name:"",
     price:"",
-    description:""
+    description:"",
+    
   });
   
 
-  function submitHandler(e){
+  function submitHandler(e) {
     e.preventDefault();
-
-    if(editIndex!==null){
-      
+  
+    if (editIndex !== null) {
+      const updatedData = data.map((item, index) =>
+        index === editIndex ? formData : item
+      );
+      setData(updatedData);
+      setEditIndex(null);
+    } else {
+      setData([...data, formData]);
     }
-    else{
-      setData([...data,formData]);
-
-    }
-
-
-    
+  
     setFormData({
-      name:"",
-      price:"",
-      description:""
-    })
+      name: "",
+      price: "",
+      description: "",
+    });
   }
 
   function deleteHandler(elemm){
     const filteredData=data.filter((elem,idx)=>idx!==elemm);
     setData(filteredData)
+  }
+
+  function editHandler(index){
+    setEditIndex(index)
+    setFormData(data[index]);
   }
 
 
@@ -51,9 +57,9 @@ const Products = () => {
       <div>
         <form onSubmit={submitHandler} className='product-form'>
           <input value={formData.name} onChange={(e)=>setFormData({...formData,name:e.target.value})} type="text" placeholder='Enter the product name' />
-          <input value={formData.price} onChange={(e)=>setFormData({...formData,price:e.target.value})} type="text" placeholder='Enter the price of product' />
+          <input value={formData.price} onChange={(e)=>setFormData({...formData,price:e.target.value})} type="number" placeholder='Enter the price of product' />
           <input value={formData.description} onChange={(e)=>setFormData({...formData,description:e.target.value})} type="text" placeholder='Enter the discription' />
-          <button className='product-btn'>Add</button>
+          <button className='product-btn'>{editIndex !==null ? "Update":"Add"}</button>
           
         </form>
       </div>
@@ -61,7 +67,7 @@ const Products = () => {
 
       <div className='p-[2vw] flex gap-[2vw] flex-wrap'>
         {data.map((elem,idx)=>(
-          <Cards key={idx}  data={elem} index={idx} deleteHandler={deleteHandler}/>
+          <Cards key={idx}  data={elem} index={idx} deleteHandler={deleteHandler} editHandler={editHandler}/>
         ))}
        
       

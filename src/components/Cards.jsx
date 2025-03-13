@@ -41,6 +41,7 @@ const handleRating=(star)=>{
             </form>
           </div>
           <div className='rating'>
+            
 
             {
               [1,2,3,4].map((star)=>{
